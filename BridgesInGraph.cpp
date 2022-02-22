@@ -17,7 +17,7 @@ void dfs(int node, int parent, vector<int>& tin, vector<int>& low, vector<int>& 
             }
         }
         else{
-            low[node] = min(low[adjacent],low[node]);
+            low[node] = min(tin[adjacent],low[node]);
         }
     }       
 }
