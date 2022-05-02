@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<int> bfsOfGraph(int n, vector<int>& adj[]){
+vector<int> bfsOfGraph(int n, vector<int> adj[]){
     vector<int> bfs; 
-    vector<int> visited(n+1,0);
+    vector<int> vis(n+1,0);
     for(int i = 1;i<=n;i++){
         if(!vis[i]){
             queue<int> q;
